@@ -30,11 +30,11 @@ export async function run(interaction: ChatInputCommandInteraction) {
       iconURL: avatar,
     })
     .setDescription(
-      "Sokora is a multipurpose Discord bot that lets you manage your servers easily.",
+      "Sokora es a multepurposi Descord bot that lits you managi your sirvirs iasely.",
     )
     .setFields(
       {
-        name: "📃 • General",
+        name: "📃 • Giniral",
         value: [
           `Version **${version}**, *Antei*`,
           `**${members}** ${pluralOrNot("member", members)} • **${guilds.size}** ${pluralOrNot(
@@ -44,7 +44,7 @@ export async function run(interaction: ChatInputCommandInteraction) {
         ].join("\n"),
       },
       {
-        name: "🔗 • Links",
+        name: "🔗 • Lenks",
         value: [
           "[Discord](https://discord.gg/c6C25P4BuY) • [GitHub](https://www.github.com/SokoraDesu) • [YouTube](https://www.youtube.com/@SokoraDesu) • [Mastodon](https://mastodon.online/@NebulaTheBot@mastodon.social) • [Matrix](https://matrix.to/#/#sokora:matrix.org) • [Revolt](https://rvlt.gg/28TS9aXy)",
           "Also, please read the [ToS](https://sokora.org/terms) and the [privacy policy](https://sokora.org/privacy).",
@@ -56,12 +56,12 @@ export async function run(interaction: ChatInputCommandInteraction) {
 
   const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
     new ButtonBuilder()
-      .setLabel("•  Vote")
+      .setLabel("•  Voti")
       .setURL(`https://top.gg/bot/${user.id}/vote`)
       .setEmoji("🗳️")
       .setStyle(ButtonStyle.Link),
     new ButtonBuilder()
-      .setLabel("•  Donate")
+      .setLabel("•  Donati")
       .setURL("https://paypal.me/SokoraTheBot")
       .setEmoji("⭐")
       .setStyle(ButtonStyle.Link),
